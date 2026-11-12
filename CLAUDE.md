@@ -7,12 +7,12 @@
 
 ## Building
 
-- `overlay use .` from the repo root loads `mod.nu`, which loads
+- `overlay use . as proffie` from the repo root loads `mod.nu`, which loads
   `nushell/`.
-- `saber` lists the sabers.
-- `saber build <id>` compiles into `build/<id>/`.
-- `saber upload <id>` compiles and flashes.
-- `nushell/saber.nu` passes `CONFIG_FILE` as a compiler define. Leave
+- `proffie` lists the sabers.
+- `proffie build <id>` compiles into `build/<id>/`.
+- `proffie upload <id>` compiles and flashes.
+- `nushell/proffie.nu` passes `CONFIG_FILE` as a compiler define. Leave
   the `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
 - The registry of sabers is the `sabers` const in `nushell/sabers.nu`.
 
@@ -35,7 +35,7 @@
 - The 7.12 sources are in `../My Lightsabers/<saber>/`. They are
   read-only reference.
 - Port one saber per commit. Add it to `nushell/sabers.nu`.
-- Run `saber build <id>` before committing.
+- Run `proffie build <id>` before committing.
 - Reference material: `../CCSabers Support/` (vendor configs for 7.12),
   `../Blade Styles/`.
 - Sound fonts and style libraries stay outside the repo.

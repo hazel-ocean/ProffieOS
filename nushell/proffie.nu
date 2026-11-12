@@ -13,7 +13,7 @@ def resolve [id: string, span: record]: nothing -> record {
     if ($matches | is-empty) {
         error make {
             msg: $'Unknown saber: ($id)'
-            label: {text: 'run `saber` for the list', span: $span}
+            label: {text: 'run `proffie` for the list', span: $span}
         }
     }
     $matches | first
@@ -62,7 +62,7 @@ export def build [
 # Compile a saber and flash it over USB.
 export def upload [
     id: string@saber-ids  # The saber to flash
-    --port (-p): string  # Serial port; see `saber ports`
+    --port (-p): string  # Serial port; see `proffie ports`
     --usb: string = 'cdc_msc_webusb'  # Board menu `usb`
     --opt: string = 'os'  # Board menu `opt`
 ]: nothing -> nothing {
