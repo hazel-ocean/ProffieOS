@@ -219,6 +219,7 @@ export def sync-fonts [
         --modify-window=1
         --exclude=.DS_Store
         --itemize-changes
+        --mkpath
         ...(if $dry_run { [--dry-run] } else { [] })
     ]
 
@@ -234,12 +235,18 @@ export def sync-fonts [
                 deleted: 0
             }
         }
-        if not $dry_run { mkdir ($dest | path dirname) }
-        let changes = if $item.dir {
-            ^rsync ...$rsync_args --delete $'($src)/' $dest | lines
+        let result = if $item.dir {
+            ^rsync ...$rsync_args --delete $'($src)/' $dest | complete
         } else {
-            ^rsync ...$rsync_args $src $dest | lines
+            ^rsync ...$rsync_args $src $dest | complete
         }
+        if $result.exit_code != 0 {
+            error make --unspanned {
+                msg: $'rsync failed for ($item.name)'
+                help: ($result.stderr | str trim)
+            }
+        }
+        let changes = $result.stdout | lines
         {
             kind: $item.kind
             name: $item.name
