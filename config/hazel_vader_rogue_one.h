@@ -146,7 +146,7 @@ Preset presets[] = {
       InOutTrL<TrWipe<850>,TrWipeIn<1060>>>>(),
     "Vader ANH"},
   // Luke ANH, style from hazel_exile.h
-  { "Luke_ANH_Graflex;common", "tracks/Luke_ANH_Graflex.wav",
+  { "Luke_ANH_Graflex;common", "tracks/Luke_ANH.wav",
     StylePtr<Layers<
   Layers<
     RandomPerLEDFlicker<Rgb<110,225,255>,Rgb<55,113,128>>,
