@@ -5,9 +5,18 @@ export const core = {
     url: 'https://profezzorn.github.io/arduino-proffieboard/package_proffieboard_index.json'
 }
 
+# Board menu options go into the FQBN. `opt: os` is Smallest Code.
+# proffieboard_v2_config.h requires dosfs=sdspi.
+# proffieboard_v3_config.h requires dosfs=sdmmc1, SDIO High Speed.
 export const boards = {
-    v2: 'proffieboard:stm32l4:ProffieboardV2-L433CC'
-    v3: 'proffieboard:stm32l4:ProffieboardV3-L452RE'
+    v2: {
+        fqbn: 'proffieboard:stm32l4:ProffieboardV2-L433CC'
+        options: {usb: cdc_msc_webusb, dosfs: sdspi, opt: os}
+    }
+    v3: {
+        fqbn: 'proffieboard:stm32l4:ProffieboardV3-L452RE'
+        options: {usb: cdc_msc_webusb, dosfs: sdmmc1, opt: os}
+    }
 }
 
 export const sabers = [

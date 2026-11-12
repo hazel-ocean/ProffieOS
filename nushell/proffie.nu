@@ -19,8 +19,16 @@ def resolve [id: string, span: record]: nothing -> record {
     $matches | first
 }
 
-def fqbn [board: string, usb: string, opt: string]: nothing -> string {
-    $'($boards | get $board):usb=($usb),opt=($opt)'
+# Flags override the board's default menu options.
+def fqbn [board: string, overrides: record]: nothing -> string {
+    let spec = $boards | get $board
+    let options = (
+        $spec.options
+        | merge ($overrides | compact)
+        | items {|k, v| $'($k)=($v)' }
+        | str join ','
+    )
+    $'($spec.fqbn):($options)'
 }
 
 # Uses nix when arduino-cli is not on PATH.
@@ -71,8 +79,9 @@ export def main []: nothing -> table {
 # Compile a saber's firmware into build/<id>/.
 export def build [
     id: string@saber-ids  # The saber to build
-    --usb: string = 'cdc_msc_webusb'  # Board menu `usb`
-    --opt: string = 'os'  # Board menu `opt`
+    --usb: string  # Board menu `usb`; defaults per board
+    --dosfs: string  # Board menu `dosfs`; defaults per board
+    --opt: string  # Board menu `opt`; defaults per board
 ]: nothing -> nothing {
     let saber = resolve $id (metadata $id).span
     require-core
@@ -84,7 +93,7 @@ export def build [
     let define = $"compiler.cpp.extra_flags='-DCONFIG_FILE=\"($saber.config)\"'"
 
     (arduino compile
-        --fqbn (fqbn $saber.board $usb $opt)
+        --fqbn (fqbn $saber.board {usb: $usb, dosfs: $dosfs, opt: $opt})
         --build-property $define
         --build-path ($out | path join work)
         --output-dir $out
@@ -95,15 +104,16 @@ export def build [
 export def upload [
     id: string@saber-ids  # The saber to flash
     --port (-p): string  # Serial port; see `proffie ports`
-    --usb: string = 'cdc_msc_webusb'  # Board menu `usb`
-    --opt: string = 'os'  # Board menu `opt`
+    --usb: string  # Board menu `usb`; defaults per board
+    --dosfs: string  # Board menu `dosfs`; defaults per board
+    --opt: string  # Board menu `opt`; defaults per board
 ]: nothing -> nothing {
     let saber = resolve $id (metadata $id).span
-    build $id --usb $usb --opt $opt
+    build $id --usb $usb --dosfs $dosfs --opt $opt
 
     let port_args = if $port == null { [] } else { [--port $port] }
     (arduino upload
-        --fqbn (fqbn $saber.board $usb $opt)
+        --fqbn (fqbn $saber.board {usb: $usb, dosfs: $dosfs, opt: $opt})
         --input-dir ($repo | path join build $id)
         ...$port_args
         $repo)
