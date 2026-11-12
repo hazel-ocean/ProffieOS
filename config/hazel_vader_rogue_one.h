@@ -49,7 +49,7 @@ const unsigned int maxLedsPerStrip = 128;
 #ifdef CONFIG_PRESETS
 Preset presets[] = {
   // Vader R1, style from hazel_exile.h
-  { "Vader_R1;common", "tracks/Vader R1.wav",
+  { "Vader_R1;common", "tracks/Vader_R1.wav",
     StylePtr<Layers<
   HumpFlicker<RotateColorsX<Variation,Rgb<175,0,0>>,RotateColorsX<Variation,Rgb<75,0,0>>,75>,
   LockupTrL<Layers<
@@ -94,12 +94,12 @@ Preset presets[] = {
   InOutTrL<TrWipe<700>,TrWipeIn<800>>>>(),
     "Vader R1"},
   // Luke Exile, style from hazel_exile.h
-  { "Luke_Exile;common", "tracks/Luke Exile.wav",
+  { "Luke_Exile;common", "tracks/Luke_Exile.wav",
     StylePtr<InOutHelper<OnSpark<Blast<LocalizedClash<Lockup<AudioFlicker<Green,Rgb16<0,38402,0>>,Pulsing<Gradient<AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>,HumpFlicker<OrangeRed,Pink,50>,AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>>,Gradient<AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>,HumpFlicker<OrangeRed,Pink,50>,AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>>,3500>,Gradient<AudioFlicker<Cyan,DeepSkyBlue>,AudioFlicker<Cyan,DeepSkyBlue>,HumpFlicker<Pink,OrangeRed,50>>>,Pink>,Pink>,Pink,400>,200,500>>(),
     StylePtr<InOutHelper<OnSpark<Blast<LocalizedClash<Lockup<AudioFlicker<Green,Rgb16<0,38402,0>>,Pulsing<Gradient<AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>,HumpFlicker<OrangeRed,Pink,50>,AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>>,Gradient<AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>,HumpFlicker<OrangeRed,Pink,50>,AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>,AudioFlicker<Green,Rgb16<0,38402,0>>>,3500>,Gradient<AudioFlicker<Cyan,DeepSkyBlue>,AudioFlicker<Cyan,DeepSkyBlue>,HumpFlicker<Pink,OrangeRed,50>>>,Pink>,Pink>,Pink,400>,200,500>>(),
     "Luke Exile"},
   // Vader ANH, style from hazel_exile.h
-  { "Vader_ANH;common", "tracks/Vader ANH.wav",
+  { "Vader_ANH;common", "tracks/Vader_ANH.wav",
     StylePtr<Layers<
       AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,
       TransitionEffectL<TrConcat<TrFade<400>,AudioFlickerL<RotateColorsX<Variation,Red>>,TrDelay<4999>,AudioFlickerL<RotateColorsX<Variation,Red>>,TrFade<800>>,EFFECT_FORCE>,
@@ -146,7 +146,7 @@ Preset presets[] = {
       InOutTrL<TrWipe<850>,TrWipeIn<1060>>>>(),
     "Vader ANH"},
   // Luke ANH, style from hazel_exile.h
-  { "Luke_ANH_Graflex;common", "tracks/Luke ANH.wav",
+  { "Luke_ANH_Graflex;common", "tracks/Luke_ANH_Graflex.wav",
     StylePtr<Layers<
   Layers<
     RandomPerLEDFlicker<Rgb<110,225,255>,Rgb<55,113,128>>,
@@ -173,7 +173,7 @@ Preset presets[] = {
   InOutTrL<TrWipe<250>,TrWipeIn<1200>>>>(),
     "Luke ANH"},
   // Vader ESB, style from hazel_exile.h
-  { "Vader_ESB;common", "tracks/Vader ESB.wav",
+  { "Vader_ESB;common", "tracks/Vader_ESB.wav",
     StylePtr<Layers<
       Layers<
         RotateColorsX<Variation,Red>,
@@ -216,7 +216,7 @@ Preset presets[] = {
       InOutTrL<TrWipe<1000>,TrWipeIn<1060>>>>(),
     "Vader ESB"},
   // Luke ESB, style from hazel_exile.h
-  { "Luke_ESB;common", "tracks/Luke ESB.wav",
+  { "Luke_ESB;common", "tracks/Luke_ESB.wav",
     StylePtr<Layers<
   HumpFlicker<Rgb<55,155,255>,Rgb<28,78,128>,7>,
   LockupTrL<Layers<
@@ -253,7 +253,7 @@ Preset presets[] = {
   InOutTrL<TrWipe<250>,TrWipeIn<1100>>>>(),
     "Luke ESB"},
   // Vader RoTJ, style from hazel_exile.h
-  { "Vader_RoTJ;common", "tracks/Vader ROTJ.wav",
+  { "Vader_RoTJ;common", "tracks/Vader_RoTJ.wav",
     StylePtr<Layers<HumpFlicker<RotateColorsX<Variation,Rgb<200,0,0>>,RotateColorsX<Variation,Rgb<100,0,0>>,50>,
       LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,240,80>>,Bump<Sin<Int<10>,Int<10000>,Int<20000>>>>,AlphaL<LemonChiffon,Bump<Sin<Int<10>,Int<10000>,Int<20000>>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,180,50>,LemonChiffon,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,AlphaL<White,Int<0>>,TrWaveX<TransitionEffect<LemonChiffon,Rgb<255,180,50>,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,Int<300>,Int<100>,Int<400>,Sin<Int<10>,Int<10000>,Int<20000>>>>,SaberBase::LOCKUP_NORMAL>,
       LockupTrL<AlphaL<White,LayerFunctions<Bump<Scale<SlowNoise<Int<2000>>,Int<3000>,Int<16000>>,Scale<BrownNoiseF<Int<10>>,Int<14000>,Int<8000>>>,Bump<Scale<SlowNoise<Int<2300>>,Int<26000>,Int<8000>>,Scale<NoisySoundLevel,Int<5000>,Int<10000>>>,Bump<Scale<SlowNoise<Int<2300>>,Int<20000>,Int<30000>>,Scale<IsLessThan<SlowNoise<Int<1500>>,Int<8000>>,Scale<NoisySoundLevel,Int<5000>,Int<0>>,Int<0>>>>>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>,SaberBase::LOCKUP_LIGHTNING_BLOCK>,
@@ -276,7 +276,7 @@ Preset presets[] = {
       InOutTrL<TrWipe<450>,TrWipeIn<1000>,Black>>>(),
     "Vader RoTJ"},
   // Luke RoTJ, style from hazel_exile.h
-  { "Luke_RoTJ;common", "tracks/Luke ROTJ.wav",
+  { "Luke_RoTJ;common", "tracks/Luke_RoTJ.wav",
     StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb16<0,39252,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
     StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb16<0,39252,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
     "Luke RoTJ"},
