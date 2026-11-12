@@ -157,3 +157,71 @@ def detect-port []: nothing -> string {
 export def ports []: nothing -> any {
     arduino board list
 }
+
+const library = path self '../../Sound Fonts/Library'
+
+# The font folders and tracks that a saber's presets name.
+def preset-assets [config: path]: nothing -> record {
+    # A commented-out preset is not on the card.
+    let entries = (
+        open --raw $config
+        | str replace --all --regex '(?s)/\*.*?\*/' ''
+        | str replace --all --regex '//[^\n]*' ''
+        | parse --regex '\{\s*"(?<fonts>[^"]*)"\s*,\s*"(?<track>[^"]*)"'
+    )
+    {
+        fonts: (
+            $entries.fonts
+            | each { split row ';' }
+            | flatten
+            | where $it != ''
+            | uniq
+        )
+        tracks: ($entries.track | where $it != '' | uniq)
+    }
+}
+
+# Copy the fonts and tracks a saber's presets name to its SD card.
+#
+# Sources are in `Sound Fonts/Library`, beside the repo. Copies never
+# delete files on the card. Prints what is missing from the library.
+export def sync-fonts [
+    id: string@saber-ids  # The saber whose presets to read
+    card: path  # The mounted SD card, e.g. /Volumes/SABER
+    --dry-run (-n)  # Show what would be copied
+]: nothing -> table {
+    let saber = resolve $id (metadata $id).span
+    if not ($card | path exists) {
+        error make {
+            msg: $'No such directory: ($card)'
+            label: {text: 'mount the SD card first', span: (metadata $card).span}
+        }
+    }
+    let assets = preset-assets ($repo | path join $saber.config)
+    let items = (
+        ($assets.fonts | each {|f| {kind: font, name: $f, dir: true} })
+        ++ ($assets.tracks | each {|t| {kind: track, name: $t, dir: false} })
+    )
+    # FAT keeps mtimes to 2 s, and stores no owner or mode.
+    let rsync_args = [
+        --recursive
+        --times
+        --modify-window=1
+        --exclude=.DS_Store
+        ...(if $dry_run { [--dry-run] } else { [] })
+    ]
+
+    $items | each {|item|
+        let src = $library | path join $item.name
+        let dest = $card | path join $item.name
+        let status = if not ($src | path exists) {
+            'missing'
+        } else {
+            if not $dry_run { mkdir ($dest | path dirname) }
+            let from = if $item.dir { $'($src)/' } else { $src }
+            ^rsync ...$rsync_args $from $dest
+            if $dry_run { 'would copy' } else { 'copied' }
+        }
+        {kind: $item.kind, name: $item.name, status: $status}
+    }
+}

@@ -16,6 +16,9 @@
 - `proffie` lists the sabers.
 - `proffie build <id>` compiles into `build/<id>/`.
 - `proffie upload <id>` compiles and flashes.
+- `proffie sync-fonts <id> <card>` copies the fonts and tracks that the
+  saber's presets name from `../Sound Fonts/Library` to a mounted SD card.
+  It lists each one that the library lacks.
 - `nushell/proffie.nu` passes `CONFIG_FILE` as a compiler define. Leave
   the `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
 - The registry of sabers is the `sabers` const in `nushell/sabers.nu`.
