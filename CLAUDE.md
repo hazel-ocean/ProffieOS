@@ -14,8 +14,12 @@
 - `proffie setup` installs the Proffieboard board package. Run it once
   per machine. It needs `arduino-cli` or nix on the PATH.
 - `proffie` lists the sabers.
+- `proffie info <id>` shows one saber, with its default FQBN.
 - `proffie build <id>` compiles into `build/<id>/`.
 - `proffie upload <id>` compiles and flashes.
+- `build` and `upload` also take the saber from the pipeline:
+  `proffie info <id> | proffie build | proffie upload`. `upload` flashes
+  piped `build` output as built, with no second compile.
 - `proffie sync-fonts <id> <card>` copies the fonts and tracks that the
   saber's presets name from `../Sound Fonts/Library` to a mounted SD card.
   Each synced font folder becomes an exact copy of the library's, so files
