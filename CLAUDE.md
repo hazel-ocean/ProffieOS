@@ -29,7 +29,7 @@
 | Korbanth Exile | V2    | fett263 | 8.10, `config/hazel_exile.h`    |
 | Dooku V3       | V3    | fett263 | 8.10, `config/hazel_count_dooku.h` |
 | Graflex ANH    | V3    | sa22c   | 8.10, `config/hazel_graflex_anh.h` |
-| Vader MPP R1   | V3    | fett263 | 7.12, not ported                |
+| Vader MPP R1   | V3    | fett263 | 8.10, `config/hazel_vader_rogue_one.h` |
 
 - Config files are `config/hazel_<id>.h`. They must stay directly in
   `config/`, because they include `proffieboard_*.h` and `../props/...`
