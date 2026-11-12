@@ -4,7 +4,7 @@
 #define NUM_BUTTONS 2
 #define VOLUME 1000
 const unsigned int maxLedsPerStrip = 128;
-#define CLASH_THRESHOLD_G 0.05
+#define CLASH_THRESHOLD_G 1.0
 #define ENABLE_AUDIO
 #define ENABLE_MOTION
 #define ENABLE_WS2811
@@ -22,10 +22,10 @@ const unsigned int maxLedsPerStrip = 128;
 #define FETT263_STAB_ON_NO_BM
 #define FETT263_STAB_ON
 
-#define FETT263_SWING_ON_SPEED 300
-#define FETT263_SWING_ON_NO_BM
-#define FETT263_SWING_ON
-#define FETT263_SWING_OFF
+// #define FETT263_SWING_ON_SPEED 300
+// #define FETT263_SWING_ON_NO_BM
+// #define FETT263_SWING_ON
+// #define FETT263_SWING_OFF
 
 #define MOTION_TIMEOUT (3 * 60 * 1000)
 #define FETT263_THRUST_ON
