@@ -183,12 +183,13 @@ def preset-assets [config: path]: nothing -> record {
 
 # Copy the fonts and tracks a saber's presets name to its SD card.
 #
-# Sources are in `Sound Fonts/Library`, beside the repo. Copies never
-# delete files on the card. Prints what is missing from the library.
+# Sources are in `Sound Fonts/Library`, beside the repo. Each synced font
+# folder becomes an exact copy: files the library lacks are deleted from
+# it. Everything else on the card stays. Lists what the library lacks.
 export def sync-fonts [
     id: string@saber-ids  # The saber whose presets to read
     card: path  # The mounted SD card, e.g. /Volumes/SABER
-    --dry-run (-n)  # Show what would be copied
+    --dry-run (-n)  # Show what would be copied and deleted
 ]: nothing -> table {
     let saber = resolve $id (metadata $id).span
     if not ($card | path exists) {
@@ -202,26 +203,49 @@ export def sync-fonts [
         ($assets.fonts | each {|f| {kind: font, name: $f, dir: true} })
         ++ ($assets.tracks | each {|t| {kind: track, name: $t, dir: false} })
     )
+    # --delete must never reach above the folder a preset names.
+    let unsafe = $items | where {|i|
+        ($i.name | str starts-with '/') or ('..' in ($i.name | path split))
+    }
+    if ($unsafe | is-not-empty) {
+        error make --unspanned {
+            msg: $'Unsafe preset paths: ($unsafe.name | str join ", ")'
+        }
+    }
     # FAT keeps mtimes to 2 s, and stores no owner or mode.
     let rsync_args = [
         --recursive
         --times
         --modify-window=1
         --exclude=.DS_Store
+        --itemize-changes
         ...(if $dry_run { [--dry-run] } else { [] })
     ]
 
     $items | each {|item|
         let src = $library | path join $item.name
         let dest = $card | path join $item.name
-        let status = if not ($src | path exists) {
-            'missing'
-        } else {
-            if not $dry_run { mkdir ($dest | path dirname) }
-            let from = if $item.dir { $'($src)/' } else { $src }
-            ^rsync ...$rsync_args $from $dest
-            if $dry_run { 'would copy' } else { 'copied' }
+        if not ($src | path exists) {
+            return {
+                kind: $item.kind
+                name: $item.name
+                status: missing
+                copied: 0
+                deleted: 0
+            }
         }
-        {kind: $item.kind, name: $item.name, status: $status}
+        if not $dry_run { mkdir ($dest | path dirname) }
+        let changes = if $item.dir {
+            ^rsync ...$rsync_args --delete $'($src)/' $dest | lines
+        } else {
+            ^rsync ...$rsync_args $src $dest | lines
+        }
+        {
+            kind: $item.kind
+            name: $item.name
+            status: (if $dry_run { 'would sync' } else { 'synced' })
+            copied: ($changes | where ($it | str starts-with '>f') | length)
+            deleted: ($changes | where ($it | str starts-with '*deleting') | length)
+        }
     }
 }
