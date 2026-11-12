@@ -109,14 +109,48 @@ export def upload [
     --opt: string  # Board menu `opt`; defaults per board
 ]: nothing -> nothing {
     let saber = resolve $id (metadata $id).span
+    let port = $port | default { detect-port }
     build $id --usb $usb --dosfs $dosfs --opt $opt
 
-    let port_args = if $port == null { [] } else { [--port $port] }
     (arduino upload
         --fqbn (fqbn $saber.board {usb: $usb, dosfs: $dosfs, opt: $opt})
         --input-dir ($repo | path join build $id)
-        ...$port_args
+        --port $port
         $repo)
+}
+
+# The address of each serial port that matches a Proffieboard.
+def proffie-ports []: record -> list<string> {
+    $in
+    | get -o detected_ports
+    | default []
+    | where {|p|
+        $p.matching_boards?
+        | default []
+        | any {|b| $b.fqbn | str starts-with $'($core.id):' }
+    }
+    | get port.address
+}
+
+# Without a port, the 1200 bps touch that enters DFU does not run, and
+# stm32l4-upload times out.
+def detect-port []: nothing -> string {
+    let found = arduino board list --json | from json | proffie-ports
+    match ($found | length) {
+        1 => ($found | first)
+        0 => {
+            error make --unspanned {
+                msg: 'No Proffieboard found'
+                help: 'Connect the board, or pass --port. See `proffie ports`.'
+            }
+        }
+        _ => {
+            error make --unspanned {
+                msg: $'More than one Proffieboard found: ($found | str join ", ")'
+                help: 'Pass --port to choose one.'
+            }
+        }
+    }
 }
 
 # List connected boards.
