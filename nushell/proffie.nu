@@ -37,6 +37,19 @@ def --wrapped arduino [...args] {
     }
 }
 
+def require-core []: nothing -> nothing {
+    let installed = (arduino core list --json
+        | from json
+        | get platforms
+        | where id == $core.id)
+    if ($installed | is-empty) {
+        error make --unspanned {
+            msg: $'Board package ($core.id) is not installed'
+            help: 'Run `proffie setup` first.'
+        }
+    }
+}
+
 # Install the Proffieboard board package.
 #
 # Run once per machine before `proffie build`. Reinstalling the same
@@ -62,6 +75,7 @@ export def build [
     --opt: string = 'os'  # Board menu `opt`
 ]: nothing -> nothing {
     let saber = resolve $id (metadata $id).span
+    require-core
     let out = $repo | path join build $id
 
     # arduino-cli splits the compile recipe with shell quoting. The single
