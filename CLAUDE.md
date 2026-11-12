@@ -9,6 +9,8 @@
 
 - `overlay use . as proffie` from the repo root loads `mod.nu`, which loads
   `nushell/`.
+- `.env.nu` returns `{overlays: [mod.nu]}`, so a shell with the nuenv hook
+  loads the commands on entering the repo. Run `nuenv allow` once.
 - `proffie setup` installs the Proffieboard board package. Run it once
   per machine. It needs `arduino-cli` or nix on the PATH.
 - `proffie` lists the sabers.
