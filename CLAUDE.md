@@ -1,7 +1,9 @@
 # Hazel's Sabers (ProffieOS fork)
 
 - Branch `hazels-sabers` tracks upstream ProffieOS. Base: tag `v8.10`.
-- Remote `upstream` is `profezzorn/ProffieOS`. There is no fork remote yet.
+- Remote `upstream` is `profezzorn/ProffieOS`.
+- Remote `origin` is the public fork `hazel-ocean/ProffieOS`. Push only on
+  request.
 - Customizations are additive. Edit an upstream file only when a saber
   needs it, and say so in the commit message.
 
