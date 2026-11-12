@@ -7,12 +7,14 @@
 
 ## Building
 
-- `use saber.nu`, then `saber` lists the sabers.
+- `overlay use .` from the repo root loads `mod.nu`, which loads
+  `nushell/`.
+- `saber` lists the sabers.
 - `saber build <id>` compiles into `build/<id>/`.
 - `saber upload <id>` compiles and flashes.
-- `saber.nu` passes `CONFIG_FILE` as a compiler define. Leave the
-  `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
-- The registry of sabers is the `sabers` table in `saber.nu`.
+- `nushell/saber.nu` passes `CONFIG_FILE` as a compiler define. Leave
+  the `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
+- The registry of sabers is the `sabers` const in `nushell/sabers.nu`.
 
 ## Sabers
 
@@ -32,7 +34,7 @@
 
 - The 7.12 sources are in `../My Lightsabers/<saber>/`. They are
   read-only reference.
-- Port one saber per commit. Add it to the `sabers` table in `saber.nu`.
+- Port one saber per commit. Add it to `nushell/sabers.nu`.
 - Run `saber build <id>` before committing.
 - Reference material: `../CCSabers Support/` (vendor configs for 7.12),
   `../Blade Styles/`.

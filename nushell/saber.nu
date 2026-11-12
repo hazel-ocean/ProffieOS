@@ -1,18 +1,8 @@
 # Build and flash Hazel's sabers.
-#
-# Load with `use saber.nu`, then run `saber` to list the sabers.
 
-const repo = path self .
+use sabers.nu [boards sabers]
 
-const boards = {
-    v2: 'proffieboard:stm32l4:ProffieboardV2-L433CC'
-    v3: 'proffieboard:stm32l4:ProffieboardV3-L452RE'
-}
-
-const sabers = [
-    [id name board config];
-    [exile 'Korbanth Exile' v2 config/hazel_exile.h]
-]
+const repo = path self ..
 
 def saber-ids [] {
     $sabers | each {|s| {value: $s.id, description: $s.name} }
