@@ -1,1 +1,1 @@
-{overlays: [mod.nu]}
+{overlays: [{path: mod.nu, name: proffie}]}
