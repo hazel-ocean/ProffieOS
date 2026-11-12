@@ -1,6 +1,6 @@
 # Build and flash Hazel's sabers.
 
-use sabers.nu [boards sabers]
+use sabers.nu [core boards sabers]
 
 const repo = path self ..
 
@@ -27,9 +27,27 @@ def fqbn [board: string, usb: string, opt: string]: nothing -> string {
 def --wrapped arduino [...args] {
     if (which arduino-cli | is-not-empty) {
         ^arduino-cli ...$args
-    } else {
+    } else if (which nix | is-not-empty) {
         ^nix shell nixpkgs#arduino-cli -c arduino-cli ...$args
+    } else {
+        error make --unspanned {
+            msg: 'arduino-cli not found'
+            help: 'Install arduino-cli (https://arduino.github.io/arduino-cli/) or nix.'
+        }
     }
+}
+
+# Install the Proffieboard board package.
+#
+# Run once per machine before `proffie build`. Reinstalling the same
+# version does nothing.
+export def setup [
+    --version: string  # Board package version; defaults to the verified one
+]: nothing -> nothing {
+    let version = $version | default $core.version
+    arduino core update-index --additional-urls $core.url
+    (arduino core install $'($core.id)@($version)'
+        --additional-urls $core.url)
 }
 
 # List the sabers.

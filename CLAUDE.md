@@ -9,12 +9,16 @@
 
 - `overlay use . as proffie` from the repo root loads `mod.nu`, which loads
   `nushell/`.
+- `proffie setup` installs the Proffieboard board package. Run it once
+  per machine. It needs `arduino-cli` or nix on the PATH.
 - `proffie` lists the sabers.
 - `proffie build <id>` compiles into `build/<id>/`.
 - `proffie upload <id>` compiles and flashes.
 - `nushell/proffie.nu` passes `CONFIG_FILE` as a compiler define. Leave
   the `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
 - The registry of sabers is the `sabers` const in `nushell/sabers.nu`.
+- The `core` const in `nushell/sabers.nu` pins the board package
+  version. Raise it only after `proffie build` passes for every saber.
 
 ## Sabers
 
