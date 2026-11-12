@@ -22,4 +22,5 @@ export const boards = {
 export const sabers = [
     [id name board config];
     [exile 'Korbanth Exile' v2 config/hazel_exile.h]
+    [count_dooku 'Dooku V3' v3 config/hazel_count_dooku.h]
 ]

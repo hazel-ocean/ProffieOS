@@ -27,7 +27,7 @@
 | Saber          | Board | Prop    | Status                          |
 |----------------|-------|---------|---------------------------------|
 | Korbanth Exile | V2    | fett263 | 8.10, `config/hazel_exile.h`    |
-| Dooku V3       | V3    | fett263 | 7.12, not ported                |
+| Dooku V3       | V3    | fett263 | 8.10, `config/hazel_count_dooku.h` |
 | Graflex ANH    | V3    | sa22c   | 7.12, not ported                |
 | Vader MPP R1   | V3    | fett263 | 7.12, not ported                |
 
