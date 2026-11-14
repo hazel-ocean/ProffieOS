@@ -27,6 +27,9 @@
   Each synced font folder becomes an exact copy of the library's, so files
   in it that the library lacks are deleted. Other files on the card stay.
   It lists each font or track that the library lacks. Preview with `-n`.
+- `proffie upstream sync` fetches upstream, fast-forwards `master`, and
+  pushes `master` and tags to `origin`. `--no-push` skips the push. It
+  lists releases newer than the base of `hazels-sabers`.
 - `nushell/proffie.nu` passes `CONFIG_FILE` as a compiler define. Leave
   the `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
 - The registry of sabers is the `sabers` const in `nushell/sabers.nu`.

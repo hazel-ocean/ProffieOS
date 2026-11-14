@@ -233,6 +233,54 @@ export def ports []: nothing -> any {
     arduino board list
 }
 
+def --wrapped repo-git [...args] {
+    ^git -C $repo ...$args
+}
+
+# Fast-forward master to upstream, push it to the fork, and list releases.
+#
+# Fetches upstream's branches and tags. Fast-forwards local master to
+# upstream/master and refuses anything else. Pushes master and tags to
+# origin. hazels-sabers is untouched: it moves by rebase onto a release
+# tag. Lists release tags newer than its base. `behind` counts the commits
+# the fork's master lacked before the sync. The push sends them, unless
+# --no-push.
+export def "upstream sync" [
+    --no-push  # Update local refs only
+]: nothing -> record {
+    repo-git fetch upstream --tags --prune
+    let before = repo-git rev-parse --short master | str trim
+    let current = repo-git rev-parse --abbrev-ref HEAD | str trim
+    # A refspec cannot update the checked-out branch.
+    if $current == 'master' {
+        repo-git merge --ff-only upstream/master
+    } else {
+        repo-git fetch . upstream/master:master
+    }
+    let after = repo-git rev-parse --short master | str trim
+    repo-git fetch --quiet origin master
+    let ahead = repo-git rev-list --count origin/master..master | str trim | into int
+    if not $no_push {
+        repo-git push origin master --tags
+    }
+
+    let base = (
+        repo-git describe --tags --abbrev=0 --match 'v*'
+            (repo-git merge-base hazels-sabers upstream/master | str trim)
+        | str trim
+    )
+    {
+        master: (if $before == $after { $after } else { $'($before)..($after)' })
+        behind: $ahead
+        base: $base
+        newer_releases: (
+            repo-git tag --list 'v*' --sort=-v:refname --contains $base
+            | lines
+            | where $it != $base
+        )
+    }
+}
+
 const library = path self '../../Sound Fonts/Library'
 
 # The font folders and tracks that a saber's presets name.
