@@ -8,40 +8,18 @@ def saber-ids [] {
     $sabers | each {|s| {value: $s.id, description: $s.name} }
 }
 
-def resolve [id: string, span?: record]: nothing -> record {
+def resolve [id: string, span: record]: nothing -> record {
     let matches = $sabers | where id == $id
     if ($matches | is-empty) {
-        let msg = $'Unknown saber: ($id)'
-        let hint = 'run `proffie config list` for the list'
-        if $span == null {
-            error make --unspanned {msg: $msg, help: $hint}
-        }
         error make {
-            msg: $msg
-            label: {text: $hint, span: $span}
+            msg: $'Unknown saber: ($id)'
+            label: {
+                text: 'run `proffie config list` for the list'
+                span: $span
+            }
         }
     }
     $matches | first
-}
-
-# The saber named by the positional id, else by the pipeline input: an id,
-# or a record from `proffie config show` or `proffie firmware build`.
-def target [id: any, input: any]: nothing -> record {
-    if $id != null {
-        return (resolve $id (metadata $id).span)
-    }
-    let key = match ($input | describe | str replace --regex '<.*' '') {
-        record => $input.id?
-        string => $input
-        _ => null
-    }
-    if $key == null {
-        error make --unspanned {
-            msg: 'No saber given'
-            help: 'Pass an id, or pipe in `proffie config show <id>`.'
-        }
-    }
-    resolve $key
 }
 
 def out-dir [id: string]: nothing -> path {
@@ -113,8 +91,6 @@ export def "config list" []: nothing -> table {
 }
 
 # Show one saber: its registry row, default FQBN and build folder.
-#
-# Pipe it into `proffie firmware build` or `proffie firmware flash`.
 export def "config show" [
     id: string@saber-ids  # The saber to show
 ]: nothing -> record {
@@ -126,19 +102,15 @@ export def "config show" [
 }
 
 # Compile a saber's firmware into build/<id>/.
-#
-# Takes the saber as an id, or from the pipeline. Outputs the saber with
-# the FQBN used and the firmware path, for `proffie firmware flash`.
 export def "firmware build" [
-    id?: string@saber-ids  # The saber to build; else the pipeline input
+    id: string@saber-ids  # The saber to build
     --usb: string  # Board menu `usb`; defaults per board
     --dosfs: string  # Board menu `dosfs`; defaults per board
     --opt: string  # Board menu `opt`; defaults per board
-]: [nothing -> record, string -> record, record -> record] {
-    let saber = target $id $in
+]: nothing -> nothing {
+    let saber = resolve $id (metadata $id).span
     require-core
     let out = out-dir $saber.id
-    let board_fqbn = fqbn $saber.board {usb: $usb, dosfs: $dosfs, opt: $opt}
 
     # arduino-cli splits the compile recipe with shell quoting. The single
     # quotes keep the double quotes, so CONFIG_FILE stays a string literal.
@@ -146,60 +118,30 @@ export def "firmware build" [
     let define = $"compiler.cpp.extra_flags='-DCONFIG_FILE=\"($saber.config)\"'"
 
     (arduino compile
-        --fqbn $board_fqbn
+        --fqbn (fqbn $saber.board {usb: $usb, dosfs: $dosfs, opt: $opt})
         --build-property $define
         --build-path ($out | path join work)
         --output-dir $out
         $repo)
-
-    $saber | merge {
-        fqbn: $board_fqbn
-        out_dir: $out
-        firmware: ($out | path join ProffieOS.ino.dfu)
-    }
 }
 
-# Flash a saber over USB, compiling it first unless the input is a build.
-#
-# Takes the saber as an id, or from the pipeline. Input from
-# `proffie firmware build` is flashed as built.
+# Compile a saber and flash it over USB.
 export def "firmware flash" [
-    id?: string@saber-ids  # The saber to flash; else the pipeline input
+    id: string@saber-ids  # The saber to flash
     --port (-p): string  # Serial port; see `proffie board ports`
     --usb: string  # Board menu `usb`; defaults per board
     --dosfs: string  # Board menu `dosfs`; defaults per board
     --opt: string  # Board menu `opt`; defaults per board
-]: [nothing -> record, string -> record, record -> record] {
-    let input = $in
-    let saber = target $id $input
-    let flags = {usb: $usb, dosfs: $dosfs, opt: $opt} | compact
-    let given_build = (
-        $id == null
-        and ($input | describe | str starts-with record)
-        and ($input.firmware? != null)
-    )
-    if $given_build and ($flags | is-not-empty) {
-        error make --unspanned {
-            msg: 'Board menu flags conflict with a piped build'
-            help: 'Pass the flags to `proffie firmware build` instead.'
-        }
-    }
-    if $given_build and not ($input.firmware | path exists) {
-        error make --unspanned {msg: $'No firmware at ($input.firmware)'}
-    }
+]: nothing -> nothing {
+    let saber = resolve $id (metadata $id).span
     let port = $port | default { detect-port }
-    let built = if $given_build {
-        $input
-    } else {
-        $saber | firmware build --usb $usb --dosfs $dosfs --opt $opt
-    }
+    firmware build $id --usb $usb --dosfs $dosfs --opt $opt
 
     (arduino upload
-        --fqbn $built.fqbn
-        --input-dir $built.out_dir
+        --fqbn (fqbn $saber.board {usb: $usb, dosfs: $dosfs, opt: $opt})
+        --input-dir (out-dir $saber.id)
         --port $port
         $repo)
-    $built | merge {port: $port}
 }
 
 # The address of each serial port that matches a Proffieboard.

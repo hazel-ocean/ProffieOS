@@ -20,11 +20,6 @@
 - `proffie config show <id>` shows one saber, with its default FQBN.
 - `proffie firmware build <id>` compiles into `build/<id>/`.
 - `proffie firmware flash <id>` compiles and flashes.
-- `firmware build` and `firmware flash` also take the saber from the
-  pipeline:
-  `proffie config show <id> | proffie firmware build | proffie firmware flash`.
-  `firmware flash` flashes piped `firmware build` output as built, with no
-  second compile.
 - `proffie fonts sync <id> <card>` copies the fonts and tracks that the
   saber's presets name from `../Sound Fonts/Library` to a mounted SD card.
   Each synced font folder becomes an exact copy of the library's, so files
