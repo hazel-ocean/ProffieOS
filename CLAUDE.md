@@ -22,7 +22,7 @@
 - `build` and `upload` also take the saber from the pipeline:
   `proffie info <id> | proffie build | proffie upload`. `upload` flashes
   piped `build` output as built, with no second compile.
-- `proffie sync-fonts <id> <card>` copies the fonts and tracks that the
+- `proffie fonts sync <id> <card>` copies the fonts and tracks that the
   saber's presets name from `../Sound Fonts/Library` to a mounted SD card.
   Each synced font folder becomes an exact copy of the library's, so files
   in it that the library lacks are deleted. Other files on the card stay.

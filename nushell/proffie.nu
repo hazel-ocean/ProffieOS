@@ -261,7 +261,7 @@ def preset-assets [config: path]: nothing -> record {
 # Sources are in `Sound Fonts/Library`, beside the repo. Each synced font
 # folder becomes an exact copy: files the library lacks are deleted from
 # it. Everything else on the card stays. Lists what the library lacks.
-export def sync-fonts [
+export def "fonts sync" [
     id: string@saber-ids  # The saber whose presets to read
     card: path  # The mounted SD card, e.g. /Volumes/SABER
     --dry-run (-n)  # Show what would be copied and deleted
