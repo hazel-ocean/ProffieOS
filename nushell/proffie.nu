@@ -12,19 +12,20 @@ def resolve [id: string, span?: record]: nothing -> record {
     let matches = $sabers | where id == $id
     if ($matches | is-empty) {
         let msg = $'Unknown saber: ($id)'
+        let hint = 'run `proffie config list` for the list'
         if $span == null {
-            error make --unspanned {msg: $msg, help: 'Run `proffie` for the list.'}
+            error make --unspanned {msg: $msg, help: $hint}
         }
         error make {
             msg: $msg
-            label: {text: 'run `proffie` for the list', span: $span}
+            label: {text: $hint, span: $span}
         }
     }
     $matches | first
 }
 
 # The saber named by the positional id, else by the pipeline input: an id,
-# or a record from `proffie info` or `proffie build`.
+# or a record from `proffie config show` or `proffie firmware build`.
 def target [id: any, input: any]: nothing -> record {
     if $id != null {
         return (resolve $id (metadata $id).span)
@@ -37,7 +38,7 @@ def target [id: any, input: any]: nothing -> record {
     if $key == null {
         error make --unspanned {
             msg: 'No saber given'
-            help: 'Pass an id, or pipe in `proffie info <id>`.'
+            help: 'Pass an id, or pipe in `proffie config show <id>`.'
         }
     }
     resolve $key
@@ -81,16 +82,16 @@ def require-core []: nothing -> nothing {
     if ($installed | is-empty) {
         error make --unspanned {
             msg: $'Board package ($core.id) is not installed'
-            help: 'Run `proffie setup` first.'
+            help: 'Run `proffie board install` first.'
         }
     }
 }
 
 # Install the Proffieboard board package.
 #
-# Run once per machine before `proffie build`. Reinstalling the same
+# Run once per machine before `proffie firmware build`. Reinstalling the same
 # version does nothing.
-export def setup [
+export def "board install" [
     --version: string  # Board package version; defaults to the verified one
 ]: nothing -> nothing {
     let version = $version | default $core.version
@@ -99,15 +100,22 @@ export def setup [
         --additional-urls $core.url)
 }
 
-# List the sabers.
+# List the proffie commands.
 export def main []: nothing -> table {
+    help commands
+    | where name starts-with 'proffie '
+    | select name description
+}
+
+# List the sabers.
+export def "config list" []: nothing -> table {
     $sabers
 }
 
 # Show one saber: its registry row, default FQBN and build folder.
 #
-# Pipe it into `proffie build` or `proffie upload`.
-export def info [
+# Pipe it into `proffie firmware build` or `proffie firmware flash`.
+export def "config show" [
     id: string@saber-ids  # The saber to show
 ]: nothing -> record {
     let saber = resolve $id (metadata $id).span
@@ -120,8 +128,8 @@ export def info [
 # Compile a saber's firmware into build/<id>/.
 #
 # Takes the saber as an id, or from the pipeline. Outputs the saber with
-# the FQBN used and the firmware path, for `proffie upload`.
-export def build [
+# the FQBN used and the firmware path, for `proffie firmware flash`.
+export def "firmware build" [
     id?: string@saber-ids  # The saber to build; else the pipeline input
     --usb: string  # Board menu `usb`; defaults per board
     --dosfs: string  # Board menu `dosfs`; defaults per board
@@ -154,10 +162,10 @@ export def build [
 # Flash a saber over USB, compiling it first unless the input is a build.
 #
 # Takes the saber as an id, or from the pipeline. Input from
-# `proffie build` is flashed as built.
-export def upload [
+# `proffie firmware build` is flashed as built.
+export def "firmware flash" [
     id?: string@saber-ids  # The saber to flash; else the pipeline input
-    --port (-p): string  # Serial port; see `proffie ports`
+    --port (-p): string  # Serial port; see `proffie board ports`
     --usb: string  # Board menu `usb`; defaults per board
     --dosfs: string  # Board menu `dosfs`; defaults per board
     --opt: string  # Board menu `opt`; defaults per board
@@ -173,7 +181,7 @@ export def upload [
     if $given_build and ($flags | is-not-empty) {
         error make --unspanned {
             msg: 'Board menu flags conflict with a piped build'
-            help: 'Pass the flags to `proffie build` instead.'
+            help: 'Pass the flags to `proffie firmware build` instead.'
         }
     }
     if $given_build and not ($input.firmware | path exists) {
@@ -183,7 +191,7 @@ export def upload [
     let built = if $given_build {
         $input
     } else {
-        $saber | build --usb $usb --dosfs $dosfs --opt $opt
+        $saber | firmware build --usb $usb --dosfs $dosfs --opt $opt
     }
 
     (arduino upload
@@ -216,7 +224,7 @@ def detect-port []: nothing -> string {
         0 => {
             error make --unspanned {
                 msg: 'No Proffieboard found'
-                help: 'Connect the board, or pass --port. See `proffie ports`.'
+                help: 'Connect the board, or pass --port. See `proffie board ports`.'
             }
         }
         _ => {
@@ -229,7 +237,7 @@ def detect-port []: nothing -> string {
 }
 
 # List connected boards.
-export def ports []: nothing -> any {
+export def "board ports" []: nothing -> any {
     arduino board list
 }
 

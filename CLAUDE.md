@@ -13,15 +13,18 @@
   `nushell/`.
 - `.env.nu` returns `{overlays: [mod.nu]}`, so a shell with the nuenv hook
   loads the commands on entering the repo. Run `nuenv allow` once.
-- `proffie setup` installs the Proffieboard board package. Run it once
-  per machine. It needs `arduino-cli` or nix on the PATH.
-- `proffie` lists the sabers.
-- `proffie info <id>` shows one saber, with its default FQBN.
-- `proffie build <id>` compiles into `build/<id>/`.
-- `proffie upload <id>` compiles and flashes.
-- `build` and `upload` also take the saber from the pipeline:
-  `proffie info <id> | proffie build | proffie upload`. `upload` flashes
-  piped `build` output as built, with no second compile.
+- `proffie board install` installs the Proffieboard board package. Run it
+  once per machine. It needs `arduino-cli` or nix on the PATH.
+- `proffie board ports` lists connected boards.
+- `proffie` lists the commands. `proffie config list` lists the sabers.
+- `proffie config show <id>` shows one saber, with its default FQBN.
+- `proffie firmware build <id>` compiles into `build/<id>/`.
+- `proffie firmware flash <id>` compiles and flashes.
+- `firmware build` and `firmware flash` also take the saber from the
+  pipeline:
+  `proffie config show <id> | proffie firmware build | proffie firmware flash`.
+  `firmware flash` flashes piped `firmware build` output as built, with no
+  second compile.
 - `proffie fonts sync <id> <card>` copies the fonts and tracks that the
   saber's presets name from `../Sound Fonts/Library` to a mounted SD card.
   Each synced font folder becomes an exact copy of the library's, so files
@@ -34,7 +37,8 @@
   the `CONFIG_FILE` lines in `ProffieOS.ino` commented out.
 - The registry of sabers is the `sabers` const in `nushell/sabers.nu`.
 - The `core` const in `nushell/sabers.nu` pins the board package
-  version. Raise it only after `proffie build` passes for every saber.
+  version. Raise it only after `proffie firmware build` passes for every
+  saber.
 
 ## Sabers
 
@@ -55,7 +59,7 @@
 - The 7.12 sources are in `../My Lightsabers/<saber>/`. They are
   read-only reference.
 - Port one saber per commit. Add it to `nushell/sabers.nu`.
-- Run `proffie build <id>` before committing.
+- Run `proffie firmware build <id>` before committing.
 - Reference material: `../CCSabers Support/` (vendor configs for 7.12),
   `../Blade Styles/`.
 - Sound fonts and style libraries stay outside the repo.

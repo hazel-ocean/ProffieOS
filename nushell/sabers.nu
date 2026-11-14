@@ -1,4 +1,4 @@
-# The board package `proffie build` was last verified against.
+# The board package `proffie firmware build` was last verified against.
 export const core = {
     id: 'proffieboard:stm32l4'
     version: '4.6'
