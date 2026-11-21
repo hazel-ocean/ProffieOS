@@ -18,6 +18,30 @@ const unsigned int maxLedsPerStrip = 144;
 
 #ifdef CONFIG_PROP
 #include "../props/saber_sa22c_buttons.h"
+
+// ProffieOS.ino includes CONFIG_PROP twice.
+#ifndef KR_GRAFLEX_BUTTONS_H
+#define KR_GRAFLEX_BUTTONS_H
+class KRGraflexButtons : public SaberSA22CButtons {
+public:
+  const char* name() override { return "KRGraflexButtons"; }
+
+  bool Event2(enum BUTTON button, EVENT event, uint32_t modifiers) override {
+    switch (EVENTID(button, event, modifiers)) {
+      // A saved click waits out the double-click window, so a double click
+      // still triggers Force without a clash.
+      case EVENTID(BUTTON_POWER, EVENT_FIRST_SAVED_CLICK_SHORT, MODE_ON):
+        if (SaberBase::Lockup()) return false;
+        SaberBase::DoClash();
+        return true;
+    }
+    return SaberSA22CButtons::Event2(button, event, modifiers);
+  }
+};
+#endif
+
+#undef PROP_TYPE
+#define PROP_TYPE KRGraflexButtons
 #endif
 
 #ifdef CONFIG_PRESETS
