@@ -50,7 +50,7 @@ Preset presets[] = {
 
 	//OG Trilogy
 
-	{ "Luke - ANH;common", "tracks/Luke_ANH.wav",
+	{ "Luke_ANH_Training;common", "tracks/Luke_ANH.wav",
 	StylePtr<Layers<
   Layers<
     RandomPerLEDFlicker<Rgb<110,225,255>,Rgb<55,113,128>>,
@@ -81,9 +81,42 @@ Preset presets[] = {
 	Retraction Effect: Fade Out
 	*/
 	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
-	"Luke"},
+	"Luke - ANH Training"},
 
-	{ "Vader - ANH;common", "tracks/Vader - ANH.wav",
+	{ "Luke_ANH_Graflex;common", "tracks/Luke_ANH.wav",
+	StylePtr<Layers<
+  Layers<
+    RandomPerLEDFlicker<Rgb<110,225,255>,Rgb<55,113,128>>,
+    AudioFlickerL<RotateColorsX<Variation,Rgb<73,150,191>>>>,
+  LockupTrL<Layers<AlphaL<Blinking<LemonChiffon,Strobe<Rgb<239,182,43>,Moccasin,15,30>,60,500>,Bump<Scale<BladeAngle<5000,28000>,Scale<BladeAngle<8000,16000>,Int<3000>,Int<44000>>,Int<3000>>,Scale<SlowNoise<Int<3000>>,Int<8000>,Int<18000>>>>,AlphaL<Blinking<BrownNoiseFlicker<LemonChiffon,Moccasin,50>,BrownNoiseFlicker<LemonChiffon,Rgb<239,182,43>,50>,100,500>,Bump<Scale<BladeAngle<5000,28000>,Scale<BladeAngle<8000,16000>,Int<3000>,Int<44000>>,Int<3000>>,Int<14599>>>>,TrConcat<TrInstant,AlphaL<Blinking<White,Strobe<BrownNoiseFlicker<Moccasin,Rgb<239,182,43>,500>,White,15,30>,60,500>,Bump<Scale<BladeAngle<5000,28000>,Scale<BladeAngle<8000,16000>,Int<3000>,Int<44000>>,Int<3000>>,Scale<SlowNoise<Int<3000>>,Int<25000>,Int<32000>>>>,TrFade<300>>,TrSmoothFade<250>,SaberBase::LOCKUP_NORMAL>,
+  ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,White>,50,1>,TrConcat<TrInstant,AlphaL<Azure,Bump<Int<12000>,Int<18000>>>,TrFade<500>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<LemonChiffon,Int<16000>>,30>,TrSmoothFade<600>>>,
+  ResponsiveStabL<OrangeRed>,
+  ResponsiveBlastWaveL<Sparkle<OrangeRed,White,9999,399>,Int<500>,Scale<SwingSpeed<200>,Int<200>,Int<200>>,Int<999>,Int<25000>>,
+  TransitionEffectL<TrConcat<TrInstant,Moccasin,TrDelay<25>,AlphaL<TransitionEffect<TransitionEffect<Sparkle<Rgb<212,175,55>,Rgb<180,130,0>>,Sparkle<Rgb<212,175,55>>,TrInstant,TrFade<300>,EFFECT_CLASH>,NavajoWhite,TrInstant,TrDelay<150>,EFFECT_CLASH>,Bump<Scale<BladeAngle<>,Int<25000>,Int<8000>>,Int<18000>>>,TrFade<600>>,EFFECT_CLASH>,
+  LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,
+  LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<27000>,Int<5000>>>,TrWipeIn<600>,TrFade<600>,SaberBase::LOCKUP_MELT>,
+  InOutTrL<TrWipe<250>,TrWipeIn<1200>>>>(),
+
+		//Ice Blue CC
+
+	/* copyright Fett263 Rotoscope (Crystal Chamber) OS6 Style
+	https://fett263.com/fett263-proffieOS6-style-library.html#Rotoscope
+	OS6.7 v4.021
+	Single Style
+	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
+
+
+	Base Color: Rgb<110,225,255> (0)
+
+	--Effects Included--
+	Preon Effect: Pulsing (Base Color)
+	Ignition Effect: Instant
+	Retraction Effect: Fade Out
+	*/
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	"Luke - ANH Graflex"},
+
+	{ "Vader_ANH;common", "tracks/Vader_ANH.wav",
     	StylePtr<Layers<
       AudioFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<128,0,0>>>,
       TransitionEffectL<TrConcat<TrFade<400>,AudioFlickerL<RotateColorsX<Variation,Red>>,TrDelay<4999>,AudioFlickerL<RotateColorsX<Variation,Red>>,TrFade<800>>,EFFECT_FORCE>,
@@ -130,7 +163,7 @@ Preset presets[] = {
        InOutTrL<TrWipe<850>,TrWipeIn<1060>>>>(),
 	"Vader - ANH"},
 
-	{ "Luke ESB Graflex;common", "tracks/Luke_ESB.wav",
+	{ "Luke_ESB;common", "tracks/Luke_ESB.wav",
 	StylePtr<Layers<
   HumpFlicker<Rgb<55,155,255>,Rgb<28,78,128>,7>,
   LockupTrL<Layers<
@@ -167,7 +200,7 @@ Preset presets[] = {
 	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Luke"},
 
-	{ "Vader - ESB;common", "tracks/Vader - ESB.wav",
+	{ "Vader_ESB;common", "tracks/Vader_ESB.wav",
     	StylePtr<Layers<
       Layers<
         RotateColorsX<Variation,Red>,
@@ -210,7 +243,7 @@ Preset presets[] = {
       InOutTrL<TrWipe<1000>,TrWipeIn<1060>>>>(),
 	"Vader - ESB"},
 
-	{ "Luke - ROTJ;common", "tracks/Luke_ROTJ.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb16<0,39252,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
+	{ "Luke_RoTJ;common", "tracks/Luke_RoTJ.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb16<0,39252,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
 
 		//Green CC
 
@@ -231,7 +264,7 @@ Preset presets[] = {
 	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"ROTJ"},
 
-	{ "Vader - ROTJ;common", "tracks/Vader - ROTJ.wav",
+	{ "Vader_RoTJ;common", "tracks/Vader_RoTJ.wav",
     	StylePtr<Layers<HumpFlicker<RotateColorsX<Variation,Rgb<200,0,0>>,RotateColorsX<Variation,Rgb<100,0,0>>,50>,
     	LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,240,80>>,Bump<Sin<Int<10>,Int<10000>,Int<20000>>>>,AlphaL<LemonChiffon,Bump<Sin<Int<10>,Int<10000>,Int<20000>>>>>,TrConcat<TrInstant,TransitionEffect<Rgb<255,180,50>,LemonChiffon,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,TrFade<400>>,TrConcat<TrInstant,AlphaL<White,Int<0>>,TrWaveX<TransitionEffect<LemonChiffon,Rgb<255,180,50>,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,Int<300>,Int<100>,Int<400>,Sin<Int<10>,Int<10000>,Int<20000>>>>,SaberBase::LOCKUP_NORMAL>,
     	LockupTrL<AlphaL<White,LayerFunctions<Bump<Scale<SlowNoise<Int<2000>>,Int<3000>,Int<16000>>,Scale<BrownNoiseF<Int<10>>,Int<14000>,Int<8000>>>,Bump<Scale<SlowNoise<Int<2300>>,Int<26000>,Int<8000>>,Scale<NoisySoundLevel,Int<5000>,Int<10000>>>,Bump<Scale<SlowNoise<Int<2300>>,Int<20000>,Int<30000>>,Scale<IsLessThan<SlowNoise<Int<1500>>,Int<8000>>,Scale<NoisySoundLevel,Int<5000>,Int<0>>,Int<0>>>>>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>,SaberBase::LOCKUP_LIGHTNING_BLOCK>,
@@ -254,7 +287,7 @@ Preset presets[] = {
     	InOutTrL<TrWipe<450>,TrWipeIn<1000>,Black>>>(),
    	"Vader - ROTJ"},
 
-	{ "Vader - R1;common", "tracks/Vader - R1.wav",
+	{ "Vader_R1;common", "tracks/Vader_R1.wav",
     	StylePtr<Layers<RotateColorsX<Variation,Rgb<120,0,0>>,
          AlphaL<RotateColorsX<Variation,Red>,SwingSpeed<100>>,
          LockupTrL<Layers<
