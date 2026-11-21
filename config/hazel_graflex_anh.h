@@ -72,7 +72,6 @@ Preset presets[] = {
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<110,225,255> (0)
 
@@ -81,7 +80,7 @@ Preset presets[] = {
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<110,225,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Luke"},
 
 	{ "Vader - ANH;common", "tracks/Vader - ANH.wav",
@@ -157,7 +156,6 @@ Preset presets[] = {
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<55,155,255> (0)
 
@@ -166,7 +164,7 @@ Preset presets[] = {
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<55,155,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Luke"},
 
 	{ "Vader - ESB;common", "tracks/Vader - ESB.wav",
@@ -222,7 +220,6 @@ Preset presets[] = {
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,255,0> (0)
 
@@ -231,7 +228,7 @@ Preset presets[] = {
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"ROTJ"},
 
 	{ "Vader - ROTJ;common", "tracks/Vader - ROTJ.wav",
@@ -303,7 +300,6 @@ OS6.7 v4.021
 Single Style
 Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-Off Behavior: Fast Pulse Dim-On
 
 Base Color: Rgb<0,0,255> (0)
 
@@ -311,7 +307,7 @@ Base Color: Rgb<0,0,255> (0)
 Ignition Effect: Instant
 Retraction Effect: Instant
 */
-StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrInstant,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,2000>>>>(),},
+StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrInstant>>>(),},
 
 	{ "Qui-Gon - TPM;common", "tracks/TPM.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb16<0,39252,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
 
@@ -323,7 +319,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Fast Pulse Dim-On
 
 	Base Color: Rgb<0,255,0> (0)
 
@@ -331,7 +326,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Instant
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrInstant,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,2000>>>>(),},
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrInstant>>>(),},
 
 	{ "Maul;common", "tracks/TPM.wav",    StylePtr<Layers<Stripes<16000,-1000,RotateColorsX<Variation,Rgb16<47835,0,0>>,Pulsing<RotateColorsX<Variation,Rgb16<65535,4975,4975>>,RotateColorsX<Variation,Rgb16<47835,0,0>>,800>,RotateColorsX<Variation,Rgb16<47835,0,0>>>,TransitionEffectL<TrConcat<TrFade<600>,RandomFlicker<RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<160,0,0>>>,TrDelay<30000>,RotateColorsX<Variation,Red>,TrFade<800>>,EFFECT_FORCE>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Orange>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Rgb<255,200,0>,DarkOrange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>>>>(),
 
@@ -343,7 +338,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Fast Pulse Dim-On
 
 	Base Color: Rgb16<47835,0,0> (0)
 
@@ -351,7 +345,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Instant
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,InOutTrL<TrInstant,TrInstant,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,2000>>>>(),},
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,InOutTrL<TrInstant,TrInstant>>>(),},
 
 
 
@@ -365,7 +359,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -374,7 +367,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Obi-Wan"},
 
 
@@ -388,7 +381,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -397,7 +389,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Anakin"},
 
 
@@ -411,7 +403,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -420,7 +411,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Dooku"},
 
 
@@ -434,7 +425,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -443,7 +433,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Obi-Wan"},
 
 
@@ -457,7 +447,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -466,7 +455,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Youngling Slayer"},
 
 
@@ -480,7 +469,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb16<47835,0,0> (0)
 
@@ -489,7 +477,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<47835,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Palpatine"},
 
 
@@ -503,7 +491,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,255,0> (0)
 
@@ -512,7 +499,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Yoda"},
 
 
@@ -527,7 +514,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb16<14386,0,65535> (0)
 
@@ -536,7 +522,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Mace"},
 
 
@@ -552,7 +538,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -561,7 +546,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Dooku"},
 
 
@@ -580,7 +565,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -589,7 +573,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Kylo"},
 
 	{ "Rey;common", "tracks/Rey.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb<180,130,0>>,RotateColorsX<Variation,Rgb<90,65,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>>,TransitionEffectL<TrConcat<TrInstant,AlphaL<Green,Bump<Int<0>,Int<4000>>>,TrFade<300>,AlphaL<DodgerBlue,Bump<Int<0>,Int<4000>>>,TrFade<300>,AlphaL<DeepSkyBlue,Bump<Int<0>,Int<4000>>>,TrDelay<350>>,EFFECT_PREON>>>(),
@@ -603,7 +587,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<180,130,0> (0)
 
@@ -612,7 +595,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<180,130,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Rey"},
 
 
@@ -638,7 +621,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb16<21919,21919,50739> (0)
 
@@ -647,7 +629,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<21919,21919,50739>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Mando"},
 
 
@@ -667,7 +649,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb16<65535,10936,1442> (0)
 
@@ -676,7 +657,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<65535,10936,1442>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Shin Hati"},
 
 
@@ -690,7 +671,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -699,7 +679,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Marrok"},
 
 
@@ -713,7 +693,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<100,100,150> (0)
 
@@ -722,7 +701,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<100,100,150>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Ahsoka"},
 
 
@@ -738,7 +717,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,255,0> (0)
 
@@ -747,7 +725,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Snips"},
 
 
@@ -767,7 +745,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,135,255> (0)
 
@@ -776,7 +753,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Ezra"},
 
 	{ "Ezra - Rebels (Green);common", "tracks/Ezra.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Green>,RotateColorsX<Variation,Rgb16<0,39252,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
@@ -789,7 +766,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,255,0> (0)
 
@@ -798,7 +774,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Ezra"},
 
 
@@ -813,7 +789,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -822,7 +797,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Kanan"},
 
 
@@ -841,7 +816,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<180,180,0> (0)
 
@@ -850,7 +824,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<180,180,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Asajj"},
 
 
@@ -868,7 +842,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,255,0> (0)
 
@@ -877,7 +850,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,255,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
    "Arcann"},
 
 
@@ -891,7 +864,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -900,7 +872,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
    "Malak"},
 
    { "Malgus;common", "tracks/Malgus.wav",    StylePtr<Layers<StripesX<Int<5000>,Int<-1400>,Mix<Sin<Int<20>>,RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb<200,0,0>>>,Mix<Sin<Int<20>>,RotateColorsX<Variation,Rgb<30,0,0>>,RotateColorsX<Variation,Rgb<128,0,0>>>,Mix<Sin<Int<16>>,RotateColorsX<Variation,Rgb<255,25,25>>,RotateColorsX<Variation,Red>>,Mix<Sin<Int<20>>,RotateColorsX<Variation,Rgb<20,0,0>>,RotateColorsX<Variation,Rgb<80,0,0>>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<Rgb<255,225,0>>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<DarkOrange,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<10000>>>>,TrConcat<TrInstant,AlphaL<TransitionEffect<Rgb<255,225,0>,DarkOrange,TrInstant,TrFade<200>,EFFECT_LOCKUP_BEGIN>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<10000>,Int<30000>>,Int<10000>>,Int<20000>>>,TrFade<400>>,TrConcat<TrInstant,Coral,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<Rgb16<41421,26168,1662>,AudioFlicker<Rgb16<41421,26168,1662>,DarkOrange>,50,1>,TrConcat<TrInstant,AlphaL<DarkOrange,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<DarkOrange,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Orange>,ResponsiveBlastL<TransitionEffect<Rgb<255,225,0>,DarkOrange,TrInstant,TrFade<50>,EFFECT_BLAST>,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<TransitionEffect<Rgb<255,225,0>,Orange,TrInstant,TrFade<100>,EFFECT_CLASH>,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<Orange,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Rgb<255,200,0>,DarkOrange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>>>>(),
@@ -913,7 +885,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -922,7 +893,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
    "Malgus"},
 
    { "Mara (Darkside);common", "tracks/Mara.wav",    StylePtr<Layers<StripesX<Int<6000>,Scale<SlowNoise<Int<2000>>,Int<-1600>,Int<-3200>>,RotateColorsX<Variation,Red>,RandomPerLEDFlicker<RotateColorsX<Variation,Rgb<80,0,0>>,RotateColorsX<Variation,Rgb<10,0,0>>>,BrownNoiseFlicker<RotateColorsX<Variation,Rgb<10,0,0>>,RotateColorsX<Variation,Rgb<128,0,0>>,300>,RotateColorsX<Variation,Red>,RandomPerLEDFlicker<Black,RotateColorsX<Variation,Rgb<128,0,0>>>,RotateColorsX<Variation,Red>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Orange,TrWipeIn<600>,TrWipe<600>>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>,Int<400>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Rgb<255,200,0>,DarkOrange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<500>,Black>>>(),
@@ -935,7 +906,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -944,7 +914,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
    "Emperors Hand"},
 
 	{ "Mara (Lightside);common", "tracks/Mara.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,Rgb16<14386,0,65535>>,RotateColorsX<Variation,Rgb16<8729,0,40112>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
@@ -957,7 +927,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb16<14386,0,65535> (0)
 
@@ -966,7 +935,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb16<14386,0,65535>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	 "Mara"},
 
 
@@ -980,7 +949,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<95,0,210> (0)
 
@@ -989,7 +957,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<95,0,210>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Revan"},
 
 	{ "Revan (Darkside);common", "tracks/KOTOR2.wav",    StylePtr<Layers<Stripes<6000,-1750,RotateColorsX<Variation,Rgb<128,0,0>>,RotateColorsX<Variation,Red>,RotateColorsX<Variation,Rgb16<21301,0,0>>>,LockupTrL<Layers<AlphaL<AudioFlickerL<DarkOrange>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<DarkOrange,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,Orange,TrFade<400>>,TrConcat<TrInstant,AlphaL<Mix<SmoothStep<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<1000>>,Stripes<1500,2000,DarkOrange,Red>,Stripes<1500,-2500,DarkOrange,Red>>,Int<18000>>,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<DarkOrange,AudioFlicker<DarkOrange,Orange>,50,1>,TrConcat<TrInstant,AlphaL<Orange,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<Orange,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Orange>,ResponsiveBlastL<Orange,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<Orange,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<Orange,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Rgb<255,200,0>,DarkOrange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<Magenta,700>,TrWipeInSparkTip<Magenta,1000>>>>(),
@@ -1002,7 +970,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -1011,7 +978,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Revan"},
 
 	{ "Satele;common", "tracks/KOTOR.wav",    StylePtr<Layers<RandomFlicker<RotateColorsX<Variation,DeepSkyBlue>,RotateColorsX<Variation,SteelBlue>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipeSparkTip<White,300>,TrWipeInSparkTip<White,500>>>>(),
@@ -1024,7 +991,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,135,255> (0)
 
@@ -1033,7 +999,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,135,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Satele"},
 
 	{ "Trooper Saber;common", "tracks/Vader.wav",    StylePtr<Layers<StripesX<Int<1500>,Scale<SlowNoise<Int<2500>>,Int<-3000>,Int<-5000>>,RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,Cyan>,RotateColorsX<Variation,SteelBlue>,RotateColorsX<Variation,DodgerBlue>,RotateColorsX<Variation,Cyan>>,LockupTrL<Layers<AlphaL<AudioFlickerL<White>,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Scale<SwingSpeed<100>,Int<14000>,Int<18000>>>>,AlphaL<White,Bump<Scale<BladeAngle<>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>>,Int<10000>>>>,TrConcat<TrInstant,White,TrFade<400>>,TrConcat<TrInstant,White,TrFade<400>>,SaberBase::LOCKUP_NORMAL>,ResponsiveLightningBlockL<Strobe<White,AudioFlicker<White,Blue>,50,1>,TrConcat<TrInstant,AlphaL<White,Bump<Int<12000>,Int<18000>>>,TrFade<200>>,TrConcat<TrInstant,HumpFlickerL<AlphaL<White,Int<16000>>,30>,TrSmoothFade<600>>>,ResponsiveStabL<Red>,ResponsiveBlastL<White,Int<400>,Scale<SwingSpeed<200>,Int<100>,Int<400>>>,ResponsiveClashL<White,TrInstant,TrFade<400>,Scale<BladeAngle<0,16000>,Int<4000>,Int<26000>>,Int<6000>,Int<20000>>,LockupTrL<AlphaL<BrownNoiseFlickerL<White,Int<300>>,SmoothStep<Int<30000>,Int<5000>>>,TrWipeIn<400>,TrFade<300>,SaberBase::LOCKUP_DRAG>,LockupTrL<AlphaL<Mix<TwistAngle<>,Red,Orange>,SmoothStep<Int<28000>,Int<5000>>>,TrWipeIn<600>,TrFade<300>,SaberBase::LOCKUP_MELT>,InOutTrL<TrWipe<300>,TrWipeIn<400>>>>(),
@@ -1046,7 +1012,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<2,72,255> (0)
 
@@ -1055,7 +1020,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<2,72,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Trooper"},
 
 
@@ -1072,7 +1037,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -1081,7 +1045,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Kestis"},
 
 
@@ -1095,7 +1059,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -1104,7 +1067,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Trilla"},
 
 
@@ -1120,7 +1083,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<255,0,0> (0)
 
@@ -1129,7 +1091,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<255,0,0>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),
 	"Starkiller"},
 
 
@@ -1143,7 +1105,6 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Single Style
 	Base Style: Hyper Responsive Rotoscope (Original Trilogy)
 
-	Off Behavior: Slow Pulse Dim-On
 
 	Base Color: Rgb<0,0,255> (0)
 
@@ -1152,7 +1113,7 @@ StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<5
 	Ignition Effect: Instant
 	Retraction Effect: Fade Out
 	*/
-	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>,Pulsing<Mix<Int<8192>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,8000>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),"Katarn"},
+	StylePtr<Layers<Mix<HoldPeakF<SwingSpeed<250>,Scale<SwingAcceleration<100>,Int<50>,Int<500>>,Scale<SwingAcceleration<>,Int<20000>,Int<10000>>>,RandomFlicker<StripesX<Int<15000>,Scale<HoldPeakF<SwingSpeed<200>,Scale<SwingAcceleration<100>,Int<50>,Int<300>>,Scale<SwingAcceleration<100>,Int<24000>,Int<16000>>>,Int<-3200>,Int<-200>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<7710>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Mix<Int<19276>,Black,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>>,InOutTrL<TrInstant,TrFadeX<RetractionTime<0>>>,TransitionEffectL<TrConcat<TrFadeX<Mult<Int<4096>,WavLen<EFFECT_PREON>>>,AlphaL<PulsingL<RgbArg<BASE_COLOR_ARG,Rgb<0,0,255>>,Int<800>>,SmoothStep<IntArg<PREON_SIZE_ARG,32768>,Int<-4000>>>,TrDelayX<Mult<Int<28672>,WavLen<EFFECT_PREON>>>>,EFFECT_PREON>>>(),"Katarn"},
 
 
 };
