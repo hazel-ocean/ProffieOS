@@ -307,7 +307,7 @@ export def "fonts sync" [
             return {
                 kind: $item.kind
                 name: $item.name
-                status: missing
+                status: (if ($dest | path exists) { 'card only' } else { 'missing' })
                 copied: 0
                 deleted: 0
             }
