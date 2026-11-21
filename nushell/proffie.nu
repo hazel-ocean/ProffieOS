@@ -43,7 +43,11 @@ def --wrapped arduino [...args] {
     if (which arduino-cli | is-not-empty) {
         ^arduino-cli ...$args
     } else if (which nix | is-not-empty) {
-        ^nix shell nixpkgs#arduino-cli -c arduino-cli ...$args
+        # nix shell empties TMPDIR, and the core's ctags then fails with
+        # "cannot open temporary file".
+        let tmp = $env.TMPDIR? | default '/tmp'
+        (^nix shell nixpkgs#arduino-cli -c
+            env $'TMPDIR=($tmp)' arduino-cli ...$args)
     } else {
         error make --unspanned {
             msg: 'arduino-cli not found'
