@@ -27,13 +27,20 @@ public:
   const char* name() override { return "KRGraflexButtons"; }
 
   bool Event2(enum BUTTON button, EVENT event, uint32_t modifiers) override {
+    // Saved clicks wait out the double-click window, so double clicks keep
+    // their stock actions.
     switch (EVENTID(button, event, modifiers)) {
-      // A saved click waits out the double-click window, so a double click
-      // still triggers Force without a clash.
-      case EVENTID(BUTTON_POWER, EVENT_FIRST_SAVED_CLICK_SHORT, MODE_ON):
+      case EVENTID(BUTTON_AUX, EVENT_FIRST_SAVED_CLICK_SHORT, MODE_ON):
         if (SaberBase::Lockup()) return false;
         SaberBase::DoClash();
         return true;
+      // The stock blast also clears multi-blast mode, which is private
+      // to SaberSA22CButtons, so hand it an AUX click.
+      case EVENTID(BUTTON_POWER, EVENT_FIRST_SAVED_CLICK_SHORT, MODE_ON):
+        return SaberSA22CButtons::Event2(
+            BUTTON_AUX,
+            EVENT_FIRST_SAVED_CLICK_SHORT,
+            MODE_ON);
     }
     return SaberSA22CButtons::Event2(button, event, modifiers);
   }
